@@ -1,0 +1,17 @@
+# Use auto line endings by default
+* text=auto
+
+# Declare most likely textfiles for this project
+README.md text
+LICENSE text
+*.py text
+*.go text
+
+# Explicitly set .sh files to use LF line endings. This ensures that
+# checkouts of this repo can switch between WSL and pure Windows
+# without adding CR to shell scripts
+*.sh text eol=lf
+
+# Declare potential binary files for this project
+*.jpeg binary
+*.jpg binary
